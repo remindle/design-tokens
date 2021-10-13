@@ -1,0 +1,26 @@
+{
+  "source": ["src/tokens/**/*.json"],
+  "platforms": {
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [{
+        "destination": "module.js",
+        "format": "javascript/module"
+      }]
+    },
+    "ts": {
+      "transformGroup": "js",
+      "files": [
+        {
+          "format": "javascript/es6",
+          "destination": "build/js/tokens.js"
+        },
+        {
+          "format": "typescript/es6-declarations",
+          "destination": "build/types/index.d.ts"
+        }
+      ]
+    }
+  }
+}

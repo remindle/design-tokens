@@ -1,0 +1,11 @@
+{
+  "color": {
+    "brand": {
+      "primary": {
+        "orange" : { "value": "#FFCF2B" },
+        "jellow" : { "value": "#F49739" },
+        "blue" : { "value": "#04004D" }
+      }
+    }
+  }
+}

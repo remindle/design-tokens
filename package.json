@@ -1,0 +1,26 @@
+{
+  "name": "@remindle/design-tokens",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Leo van Haaren <leovhaaren@gmail.com>",
+  "main": "build/js/tokens.js",
+  "types": "build/types/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "style-dictionary build",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\""
+  },
+  "devDependencies": {
+    "style-dictionary": "3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remindle/design-tokens"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

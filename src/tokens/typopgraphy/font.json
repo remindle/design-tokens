@@ -1,0 +1,12 @@
+{
+  "typography": {
+    "font": {
+      "primary": {
+        "family": { "value": "'DM Sans', sans-serif" }
+      },
+      "secondary": {
+        "family": { "value": "'Poppins', sans-serif" }
+      }
+    }
+  }
+}
