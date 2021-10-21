@@ -8,6 +8,8 @@ jobs:
   release:
     name: Publish
     runs-on: ubuntu-latest
+    outputs:
+      new_release_version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -62,7 +64,7 @@ jobs:
         env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_AUTOMATION_WEBHOOK_URL }}
         with:
-          text: "@remindle/design-tokens version ${{ steps.semantic.outputs.new_release_version }} released!"
+          text: "@remindle/design-tokens version ${{ needs.release.outputs.new_release_version }} released!"
           attachments: |
             [
               {
@@ -72,7 +74,7 @@ jobs:
                 "fields": [
                   {
                     "title": "Changelog for this release",
-                    "value": "${{ github.event.repository.url }}/releases/tag/v${{ steps.semantic.outputs.new_release_version }}"
+                    "value": "${{ github.event.repository.url }}/releases/tag/v${{ needs.release.outputs.new_release_version }}"
                   },
                   {
                     "title": "GitHub Actions URL",
