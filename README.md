@@ -1,5 +1,5 @@
 # design-tokens
-![Release](https://github.com/remindle/design-tokens/workflows/Release/badge.svg)
+![Release](https://github.com/remindle/design-tokens/actions/workflows/release.yml/badge.svg)
 
 ## Tech used
 Building components
