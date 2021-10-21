@@ -1,6 +1,6 @@
 {
   "name": "@remindle/design-tokens",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "author": "Leo van Haaren <leovhaaren@gmail.com>",
   "main": "build/js/tokens.js",
