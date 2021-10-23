@@ -1,6 +1,10 @@
 # design-tokens
 ![Release](https://github.com/remindle/design-tokens/actions/workflows/release.yml/badge.svg)
 
+## What are Design Tokens?
+Design tokens are all the values needed to construct and maintain a design system — spacing, color, typography, object styles, animation, etc. — represented as data. These can represent anything defined by design: a color as a RGB value, an opacity as a number, an animation ease as Bezier coordinates. They’re used in place of hard-coded values in order to ensure flexibility and unity across all product experiences.
+[Adobe](https://spectrum.adobe.com/page/design-tokens/)
+
 ## Tech used
 Building components
 - 📚 [Style Dictionary](https://github.com/amzn/style-dictionary) A Style Dictionary uses design tokens to define styles once and use those styles on any platform or language.
